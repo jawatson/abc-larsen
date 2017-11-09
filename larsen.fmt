@@ -1,0 +1,197 @@
+%  *************
+% larson.fmt
+% *************
+% This file is a format-file 
+% containing postscript definitions and the corresponding "decos"
+% to be used in conjunction with "abcm2ps v.7 (or greater)"
+% https://github.com/leesavide/abcm2ps 
+% Copyright (c) 2014-2016 Jean-Francois Moine
+% ===================================================================
+% Copyright (C) 2017, James Watson.
+%====================================================================
+% This program is free software; you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation; either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program; if not, write to the Free Software
+% Foundation, Inc., 51 Franklin Street, Suite 500, Boston, MA  02110-1335  USA
+% ==============================================================================
+% 
+% Details of the ornamentation may be found in the Grey Larsen's book, 
+% 'The Essential Guide to Irish Flute and Tin Whistle' (ISBN-13: 978-0786686834)
+
+beginps
+
+% Cut
+/cut {
+    moveto
+    -1 0 rmoveto
+    6 10 rlineto
+    -2 0 rlineto
+    closepath fill
+}!
+
+% Strike
+/strike {
+    moveto
+    -3 8 rmoveto
+    3 -8 rlineto
+    3 8 rlineto
+    stroke
+}!
+
+% Long Roll
+/lroll {
+    moveto
+    -7.5 0 rmoveto 
+	0 9 15 9 15 0 rcurveto
+	0 11 -15 11 -15 0 rcurveto
+	fill
+}! 
+
+% Short Roll
+/sroll {
+    moveto
+    -7.5 0 rmoveto 
+	0 9 15 9 15 0 rcurveto
+	0 11 -15 11 -15 0 rcurveto
+	
+    6 0 rmoveto
+    6 9 rlineto
+    -1 1 rlineto
+    closepath 
+    fill
+}!
+
+% Long Double Cut Roll
+/ldcroll {
+    moveto
+    -7.5 0 rmoveto 
+	0 9 15 9 15 0 rcurveto
+	0 11 -15 11 -15 0 rcurveto 
+
+    14 8 rmoveto
+    4 3 rlineto
+    -1 1 rlineto
+    closepath
+
+    1 -2 rmoveto
+    4 3 rlineto
+    -1 1 rlineto
+    closepath
+
+    fill
+}!
+
+% Short Double Cut Roll
+/sdcroll {
+    moveto
+    -7.5 0 rmoveto 
+	0 9 15 9 15 0 rcurveto
+	0 11 -15 11 -15 0 rcurveto
+	
+    6 0 rmoveto
+    6 9 rlineto
+    -1 1 rlineto
+    closepath 
+
+    8 8 rmoveto
+    4 3 rlineto
+    -1 1 rlineto
+    closepath
+
+    1 -2 rmoveto
+    4 3 rlineto
+    -1 1 rlineto
+    closepath
+
+    fill
+}!
+
+% Long Crann
+/lcrann {
+    moveto
+    4 0 rmoveto
+    -10 0 -10 8 0 8 rcurveto
+    -8 0 -8 -8 0 -8 rcurveto
+    fill
+}!
+
+% Short Crann
+/scrann {
+    moveto
+    4 0 rmoveto
+    -10 0 -10 8 0 8 rcurveto
+    -8 0 -8 -8 0 -8 rcurveto
+
+    -6 0 rmoveto
+    6 9 rlineto
+    -1 1 rlineto
+    closepath 
+    fill
+}!
+
+% Rising Slide
+/rslide {
+    moveto
+    -4 0 rmoveto 
+	4 0 6 2 6 6 rcurveto
+    2 -4 -2 -8 -6 -6 rcurveto
+    fill
+}! 
+
+% Falling Slide
+/fslide {
+    moveto
+    -4 6 rmoveto 
+	4 0 6 -2 6 -6 rcurveto
+    2 4 -2 8 -6 6 rcurveto
+    fill
+}!
+
+% Shake
+/shake {
+    moveto
+    -6 0 rmoveto
+    4 6 rlineto
+    4 -4 rlineto
+    4 4 rlineto
+    -4 -6 rlineto
+    -4 4 rlineto
+    closepath 
+    fill
+}!
+
+% Single Trill
+/strill {
+    moveto
+    0 8 rlineto
+    -4 -4 rmoveto
+    8 0 rlineto
+    stroke
+}!
+
+endps
+% ==================================== DECO ==========================================
+
+deco cut 3 cut 8 0 0 
+deco strike 3 strike 8 0 0 
+deco lroll 3 lroll 8 0 0 
+deco sroll 3 sroll 8 0 0 
+deco ldcroll 3 ldcroll 8 0 0 
+deco sdcroll 3 sdcroll 8 0 0 
+deco lcrann 3 lcrann 8 0 0 
+deco scrann 3 scrann 8 0 0 
+deco rslide 3 rslide 8 0 0
+deco fslide 3 fslide 8 0 0
+deco shake 3 shake 8 0 0
+deco strill 3 strill 8 0 0 
+
+%========= end of larsen.fmt ===================
