@@ -50,22 +50,22 @@ beginps
 % Long Roll
 /lroll {
     moveto
-    -7.5 0 rmoveto 
-	0 9 15 9 15 0 rcurveto
-	0 11 -15 11 -15 0 rcurveto
+    -6 0 rmoveto 
+	0 7 12 7 12 0 rcurveto
+	0 9 -12 9 -12 0 rcurveto
 	fill
 }! 
 
 % Short Roll
 /sroll {
     moveto
-    -7.5 0 rmoveto 
-	0 9 15 9 15 0 rcurveto
-	0 11 -15 11 -15 0 rcurveto
+    -6 0 rmoveto 
+	0 7 12 7 12 0 rcurveto
+	0 9 -12 9 -12 0 rcurveto
 	
     6 0 rmoveto
-    6 9 rlineto
-    -1 1 rlineto
+    4 8 rlineto
+    -1.5 0.5 rlineto
     closepath 
     fill
 }!
@@ -73,11 +73,11 @@ beginps
 % Long Double Cut Roll
 /ldcroll {
     moveto
-    -7.5 0 rmoveto 
-	0 9 15 9 15 0 rcurveto
-	0 11 -15 11 -15 0 rcurveto 
+    -6 0 rmoveto 
+	0 7 12 7 12 0 rcurveto
+	0 9 -12 9 -12 0 rcurveto
 
-    14 8 rmoveto
+    11 6 rmoveto
     4 3 rlineto
     -1 1 rlineto
     closepath
@@ -93,16 +93,16 @@ beginps
 % Short Double Cut Roll
 /sdcroll {
     moveto
-    -7.5 0 rmoveto 
-	0 9 15 9 15 0 rcurveto
-	0 11 -15 11 -15 0 rcurveto
+    -6 0 rmoveto 
+	0 7 12 7 12 0 rcurveto
+	0 9 -12 9 -12 0 rcurveto
 	
     6 0 rmoveto
-    6 9 rlineto
-    -1 1 rlineto
+    4 8 rlineto
+    -1.5 0.5 rlineto
     closepath 
 
-    8 8 rmoveto
+    6 6 rmoveto
     4 3 rlineto
     -1 1 rlineto
     closepath
