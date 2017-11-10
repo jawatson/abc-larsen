@@ -2,9 +2,11 @@
 
 X:1
 K:C
-L:1/2
+L:1/4
 | !cut!G !strike!G !lroll!G !sroll!G !ldcroll!G !sdcroll!G  |
+w:cut  strike lroll sroll ldcroll sdcroll  |
 | !lcrann!G !scrann!G  !rslide!G !fslide!G !shake!G !strill!G |
-| !trill!G !breath!G !roll!G ~G|
-
+w:lcrann scrann rslide fslide shake strill |
+| !trill!G !breath!G |
+w:trill breath |
 
