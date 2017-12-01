@@ -7,7 +7,7 @@
 
 % abcm2ps nora_criona.abc -O - | ps2pdf - > nora_criona.pdf 
 
-%%format larsen.fmt
+%%format ../larsen.fmt
 
 X: 1
 T: Nóra Críona
