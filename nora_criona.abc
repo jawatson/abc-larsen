@@ -1,0 +1,23 @@
+% Sample file to demonstrate the use of the larsen.fmt file.
+% Process this file with the following command to produce a ps file.
+
+% abcm2ps -O nora_criona.ps nora_criona.abc
+
+% Use the following command to produce a pdf;
+
+% abcm2ps nora_criona.abc -O - | ps2pdf - > nora_criona.pdf 
+
+%%format larsen.fmt
+
+X: 1
+T: Nóra Críona
+R: Jig
+C: Irish Traditional
+M: 6/8
+L: 1/8
+K: G
+!lroll!G3 !cut!G2A | B2G d2B | !lroll!G3 !cut!GAB | !sroll!A2B cBA |
+!lroll!G3 !cut!G2A | B2G d2B | !sroll!A2f !cut!fef | !sroll!A2B cBA :|
+|: ded !cut!!breath!d2c | B2cd2B | ded !cut!d2B | !sroll!A2 B cBA | 
+ded !cut!!breath!d2c | !cut!BAG !cut!ABC | !sroll!A f!cut!fef | !sroll!A2 B cBA :|
+
