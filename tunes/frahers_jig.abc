@@ -1,0 +1,23 @@
+% Sample file to demonstrate the use of the larsen.fmt file.
+% Process this file with the following command to produce a ps file.
+
+% abcm2ps -O frahers_jig.ps frahers_jig.abc
+
+% Use the following command to produce a pdf;
+
+% abcm2ps frahers_jig.abc -O - | ps2pdf - > frahers_jig.pdf 
+
+%%format ../larsen.fmt
+%%titleformat T, R-1 C1
+X: 1
+T: Fraher's Jig
+C: Irish
+B: The Clarke Tin Whistle, Ochs, Bill, pp.61
+R: jig
+M: 6/8
+L: 1/8
+K: Gmaj
+!rslide!A D2 {A}GED | !lcrann!D3 !cut!FED | !sroll!A D2 !cut!GED | !lcrann!D3 !cut!DEG |
+A .d2 !cut!GED | !lcrann!D3 !cut!FED | (3ABcA !cut!GEA | !lcrann!D3 D3  :|]
+||: (3ABcA d A2 | d!cut!d A !cut!AGE | GA(B c2) A | !cut!BGE !cut!E2 D |
+Add def | !cut!d(cA) !cut!A(GE) | (3ABcA !cut!GEA | !lcrann!D3 D3 :|]
